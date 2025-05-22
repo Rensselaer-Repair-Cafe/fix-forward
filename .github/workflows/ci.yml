@@ -1,5 +1,7 @@
 name: Beautiful Jekyll CI
-on: [push, pull_request]
+on: [push, pull_request]:
+  paths-ignore:
+      - '.github/**'
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
