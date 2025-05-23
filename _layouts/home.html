@@ -14,7 +14,7 @@ layout: page
     <div class="col-12 col-lg-6" align="center">
       <div>
         {% if cart.img %}
-          <img src="{{ cart.img }}" height="250"/>
+          <img src="{{ site.baseurl }}/{{ cart.img }}" height="250"/>
         {% endif %}
         <h3 class="text-xl font-semibold mb-2">{{ cart.title }}</h3>
         {% if cart.building_plan %}
