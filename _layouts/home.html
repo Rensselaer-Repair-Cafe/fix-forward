@@ -18,10 +18,10 @@ layout: page
         {% endif %}
         <h3 class="text-xl font-semibold mb-2">{{ cart.title }}</h3>
         {% if cart.building_plan %}
-          <p><a href="{{ cart.building_plan }}">Download the lesson plan</a></p>
+          <p><a href="{{ site.baseurl }}/{{ cart.building_plan }}">Download the lesson plan</a></p>
         {% endif %}
         {% if cart.supply_list %}
-          <p><a href="{{ cart.supply_list }}">Download the supply list</a></p>
+          <p><a href="{{ site.baseurl }}/{{ cart.supply_list }}">Download the supply list</a></p>
         {% endif %}
       </div>
     </div>
@@ -38,7 +38,7 @@ layout: page
     <div class="col-12 col-lg-4" align="center">
       <div>
         {% if lesson.img %}
-          <img src="{{ lesson.img }}" height="125"/>
+          <img src="{{ site.baseurl }}/{{ lesson.img }}" height="125"/>
         {% endif %}
         <h3 class="text-xl font-semibold mb-2">{{ lesson.title }}</h3>
         <p>{{ lesson.content }}</p>
@@ -46,22 +46,22 @@ layout: page
           <p>Grades {{ lesson.grades }}</p>
         {% endif %}
         {% if lesson.lesson_plan %}
-          <p><a href="{{ lesson.lesson_plan }}">Download the lesson plan</a></p>
+          <p><a href="{{ site.baseurl }}/{{ lesson.lesson_plan }}">Download the lesson plan</a></p>
         {% endif %}
         {% if lesson.book_template %}
-          <p><a href="{{ lesson.book_template }}">Download the book template</a></p>
+          <p><a href="{{ site.baseurl }}/{{ lesson.book_template }}">Download the book template</a></p>
         {% endif %}
         {% if lesson.folding_directions %}
-          <p><a href="{{ lesson.folding_directions }}">Download the folding directions</a></p>
+          <p><a href="{{ site.baseurl }}/{{ lesson.folding_directions }}">Download the folding directions</a></p>
         {% endif %}
         {% if lesson.card_printable %}
-          <p><a href="{{ lesson.card_printable }}">Download the card printable</a></p>
+          <p><a href="{{ site.baseurl }}/{{ lesson.card_printable }}">Download the card printable</a></p>
         {% endif %}
         {% if lesson.slideshow %}
-          <p><a href="{{ lesson.slideshow }}">Download the slideshow</a></p>
+          <p><a href="{{ site.baseurl }}/{{ lesson.slideshow }}">Download the slideshow</a></p>
         {% endif %}
         {% if lesson.book_list %}
-          <p><a href="{{ lesson.book_list }}">Download the book list</a></p>
+          <p><a href="{{ site.baseurl }}/{{ lesson.book_list }}">Download the book list</a></p>
         {% endif %}
       </div>
     </div>
