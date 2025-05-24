@@ -20,6 +20,7 @@ layout: null
 
   /* common CSS variables */
   --body-font: 'Lora', 'Times New Roman', serif;
+  /*--body-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   --header-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --mid-col: #808080;
 }
@@ -32,7 +33,7 @@ html {
 
 body {
   font-family: var(--body-font);
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: var(--text-col);
   position: relative;
   background-color: var(--page-col);
@@ -148,6 +149,14 @@ img {
     margin-top: 2.5rem;
   }
 }
+
+/*.lesson-title {*/
+/*  font-family: var(--header-font);*/
+/*  font-size: 1.5rem;*/
+/*  font-weight: 500;*/
+/*  line-height: 1.1;*/
+/*  margin: 1.25rem 0;*/
+/*}*/
 
 /* --- Navbar --- */
 

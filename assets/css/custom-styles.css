@@ -1,0 +1,44 @@
+---
+layout: null
+---
+
+:root {
+  --body-font: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.cart-title {
+  font-family: var(--header-font);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 1.25rem 0;
+}
+
+.cart-content {
+  font-size: 0.9rem;
+}
+
+.cart-link {
+   font-size: 0.8rem;
+}
+
+.lesson-title {
+  font-family: var(--header-font);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 1.25rem 0;
+}
+
+.lesson-content {
+  font-size: 0.9rem;
+}
+
+.lesson-grade {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.lesson-link {
+   font-size: 0.8rem;
+}

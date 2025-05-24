@@ -16,12 +16,12 @@ layout: page
         {% if cart.img %}
           <img src="{{ site.baseurl }}/{{ cart.img }}" height="250"/>
         {% endif %}
-        <h3 class="text-xl font-semibold mb-2">{{ cart.title }}</h3>
+        <div class="cart-title">{{ cart.title }}</div>
         {% if cart.building_plan %}
-          <p><a href="{{ site.baseurl }}/{{ cart.building_plan }}">Download the lesson plan</a></p>
+          <div class="cart-link"><a href="{{ site.baseurl }}/{{ cart.building_plan }}">Download the lesson plan</a></div>
         {% endif %}
         {% if cart.supply_list %}
-          <p><a href="{{ site.baseurl }}/{{ cart.supply_list }}">Download the supply list</a></p>
+          <div class="cart-link"><a href="{{ site.baseurl }}/{{ cart.supply_list }}">Download the supply list</a></div>
         {% endif %}
       </div>
     </div>
@@ -40,29 +40,31 @@ layout: page
         {% if lesson.img %}
           <img src="{{ site.baseurl }}/{{ lesson.img }}" height="125"/>
         {% endif %}
-        <h3 class="text-xl font-semibold mb-2">{{ lesson.title }}</h3>
-        <p>{{ lesson.content }}</p>
+        <div class="lesson-title">{{ lesson.title }}</div>
+        <div class="lesson-content">{{ lesson.content }}</div>
         {% if lesson.grades %}
-          <p>Grades {{ lesson.grades }}</p>
+          <div class="lesson-grade">Grades {{ lesson.grades }}</div>
         {% endif %}
+        <p>
         {% if lesson.lesson_plan %}
-          <p><a href="{{ site.baseurl }}/{{ lesson.lesson_plan }}">Download the lesson plan</a></p>
+          <div class="lesson-link"><a href="{{ site.baseurl }}/{{ lesson.lesson_plan }}">Download the lesson plan</a></div>
         {% endif %}
         {% if lesson.book_template %}
-          <p><a href="{{ site.baseurl }}/{{ lesson.book_template }}">Download the book template</a></p>
+          <div class="lesson-link"><a href="{{ site.baseurl }}/{{ lesson.book_template }}">Download the book template</a></div>
         {% endif %}
         {% if lesson.folding_directions %}
-          <p><a href="{{ site.baseurl }}/{{ lesson.folding_directions }}">Download the folding directions</a></p>
+          <div class="lesson-link"><a href="{{ site.baseurl }}/{{ lesson.folding_directions }}">Download the folding directions</a></div>
         {% endif %}
         {% if lesson.card_printable %}
-          <p><a href="{{ site.baseurl }}/{{ lesson.card_printable }}">Download the card printable</a></p>
+          <div class="lesson-link"><a href="{{ site.baseurl }}/{{ lesson.card_printable }}">Download the card printable</a></div>
         {% endif %}
         {% if lesson.slideshow %}
-          <p><a href="{{ site.baseurl }}/{{ lesson.slideshow }}">Download the slideshow</a></p>
+          <div class="lesson-link"><a href="{{ site.baseurl }}/{{ lesson.slideshow }}">Download the slideshow</a></div>
         {% endif %}
         {% if lesson.book_list %}
-          <p><a href="{{ site.baseurl }}/{{ lesson.book_list }}">Download the book list</a></p>
+          <div class="lesson-link"><a href="{{ site.baseurl }}/{{ lesson.book_list }}">Download the book list</a></div>
         {% endif %}
+        </p>
       </div>
     </div>
     {% endfor %}
