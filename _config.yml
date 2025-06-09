@@ -50,8 +50,8 @@ round-avatar: false
 social-network-links:
   email: "info@rensselaer-repair.cafe"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: https://www.facebook.com/RensselaerRepairCafe/
-  github: Rennselaer-Repair-Cafe
+  facebook: RensselaerRepairCafe/
+  github: Rensselaer-Repair-Cafe
 #  medium: yourname
 #  reddit: yourname or r/yoursubreddit
 #  linkedin: daattali
