@@ -9,7 +9,7 @@ layout: page
     <p>{{ page.carts_text }}</p>
   </div>
 
-  <div class="row">
+  <div class="row" id="carts">
     {% for cart in page.carts %}
     <div class="col-12 col-lg-6" align="center">
       <div>
@@ -18,7 +18,7 @@ layout: page
         {% endif %}
         <div class="cart-title">{{ cart.title }}</div>
         {% if cart.building_plan %}
-          <div class="cart-link"><a href="{{ site.baseurl }}/{{ cart.building_plan }}">Download the lesson plan</a></div>
+          <div class="cart-link"><a href="{{ site.baseurl }}/{{ cart.building_plan }}">Download the build plan</a></div>
         {% endif %}
         {% if cart.supply_list %}
           <div class="cart-link"><a href="{{ site.baseurl }}/{{ cart.supply_list }}">Download the supply list</a></div>
@@ -33,7 +33,7 @@ layout: page
     <p>{{ page.lessons_text }}</p>
   </div>
 
-  <div class="row">
+  <div class="row" id="lessons">
     {% for lesson in page.lessons %}
     <div class="col-12 col-lg-4" align="center">
       <div>
